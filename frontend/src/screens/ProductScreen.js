@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Product from '../components/Product';
 import Rating from '../components/Rating';
 import data from '../data';
 
@@ -52,7 +51,7 @@ export default function ProductScreen(props) {
                   {product.countInStock > 0 ? (
                     <span className="success">Em estoque</span>
                   ) : (
-                    <span className="error">Indisponível</span>
+                    <span className="danger">Indisponível</span>
                   )}
                 </div>
               </div>
